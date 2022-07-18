@@ -1,0 +1,59 @@
+.topics-div {
+    margin-left: auto;
+    margin-right: auto;
+    /*border: dotted #fa5a39;
+    border-width: 0.3em 9px;*/
+}
+
+.title {
+    font-size: 18px;
+}
+
+.topicsButtons {
+    height: 250px;
+    overflow-y:auto;
+}
+
+.topicsBtn {
+    border-radius:10px;
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    background-color: #bababa;
+}
+
+.topicsBtn:hover, .topicsBtn:active {
+    background-color: #eb5449;
+}
+
+.topicInput {
+    border: 2px solid #919191;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 80%;
+    font-size: 16px;
+    margin: 10px;
+    padding: 8px;
+}
+
+.addBtn {
+    border-radius:10px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #d9de5b;
+}
+
+.addBtn:hover {
+    background-color: #ccd4cb;
+}
+
+.addBtn:active {
+    background-color: #abb5aa;
+}
+
+.instructions {
+    font-size: 12px;
+}

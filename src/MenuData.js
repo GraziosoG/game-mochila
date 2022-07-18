@@ -1,32 +1,31 @@
 import React from 'react';
-import { FiHome, FiSettings } from 'react-icons/fi';
-import { BiLogInCircle } from 'react-icons/bi';
-import { BsPencilFill } from 'react-icons/bs';
-/*import * as FiIcons from 'react-icons/fi';*/
-// profile BsPersonFill, practice log BsFillJournalBookmarkFill, piece backpack BsFileMusicFill, imslp FiMusic, youtube BsYoutube
+import { FaPencilAlt, FaSeedling } from 'react-icons/fa';
+import { TbApi } from 'react-icons/tb';
+import { BsPinMapFill } from 'react-icons/bs';
+
 export const MenuData = [
   {
-    title: 'Home',
+    title: 'Word Assembly',
     path: '/',
-    icon: <FiHome />,
+    icon: <FaPencilAlt />,
     cName: 'nav-text'
   },
   {
-    title: 'Settings',
-    path: '/settings',
-    icon: <FiSettings />,
+    title: 'Word Assembly (Seed) Coming Soon',
+    path: '/word-assembly-seed',
+    icon: <FaSeedling />,
     cName: 'nav-text'
   },
   {
-    title: 'Login',
-    path: '/login',
-    icon: <BiLogInCircle />,
+    title: 'Word Assembly (API) Coming Soon',
+    path: '/word-assembly-api',
+    icon: <TbApi />,
     cName: 'nav-text'
   },
   {
-    title: 'Register',
-    path: '/register',
-    icon: <BsPencilFill />,
+    title: 'LocateMe',
+    path: '/locateme',
+    icon: <BsPinMapFill />,
     cName: 'nav-text'
   },
 ];

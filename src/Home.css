@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(180deg, #9bbffa, #ffffff, #a3c3f7);  
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Helvetica';
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.titleText {
+    margin-top: -50px;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.left {
+    text-align: center;
+    float: left;
+    padding-top: 30px;
+    width: 20%;
+}
+
+.middle {
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    width: 55%;
+    font-size: 20px;
+}
+
+.right {
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+    width: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .left .right .middle {
+      width: 100%;
+    }
+}
+
+.lettersHolder, .topicsHolder {
+    display: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+.displayLetters, .displayTopics {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.topicNames {
+    margin: 5px;
+}
+
+.gameBtn {
+    border-radius:10px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+}
+
+.getBtnOrg {
+    background-color: #f57520;
+}
+
+.getBtnBlu {
+    background-color: #55b6f2;
+}
+
+.getBtnGrn {
+    background-color: #7aed6d;
+}
+
+.gameBtn:hover {
+    background-color: #ccd4cb;
+}
+
+.gameBtn:active {
+    background-color: #abb5aa;
+}
