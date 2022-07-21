@@ -1,21 +1,24 @@
 import './Topics.css';
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import PropTypes from 'prop-types';
 
 const Topics = ({ topicsArray, callback, deleteCallback }) => {
     const [inputValue, setInputValue] = useState('');
 
+    const topicsButtonsRef = useRef()
+
     const onAddButtonClicked = () => {
         if (inputValue.length > 0){
             callback(inputValue);
             setInputValue('');
+            topicsButtonsRef.current.scrollTop = topicsButtonsRef.current.scrollHeight;
         }     
     }
 
     return (
     <div className="topics-div">
         <p className="title">Topics</p>
-        <div className="topicsButtons">
+        <div className="topicsButtons" ref={topicsButtonsRef}>
         {topicsArray.map( e =>
           <button onDoubleClick={() => {deleteCallback(e)}} className="topicsBtn" key={e}>{e}</button>
         )}

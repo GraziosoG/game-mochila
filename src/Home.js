@@ -7,9 +7,9 @@ import Topics from './Topics';
 function Home() {
   const [letters, setLettersValue] = useState("");
   const [quantLetters, setQuantLettersValue] = useState(3);
-  const [quantTopics, setQuantTopicsValue] = useState(5);
+  const [quantTopics, setQuantTopicsValue] = useState(3);
   const [lang, setLangValue] = useState("English");
-  const [allTopics, setAllTopicsValue] = useState(["Food", "Countries", "Cities", "Famous People", "Movies and Shows", "Songs", "Brands", "Companies", "Softwares and Apps", "Fruits/Veges","First Names", "Last Names", "Historical Events",  "Periodic Elements", "Things Before 2000", "Things After 2000"]);
+  const [allTopics, setAllTopicsValue] = useState(["Food", "Countries", "Cities", "Famous People", "Songs", "Movies and Shows", "Brands", "Companies", "Fruits/Veges", "Softwares and Apps", "First Names", "Last Names", "Historical Events",  "Periodic Elements", "Things Before 2000", "Things After 2000", "Words Ends with", "Color"]);
   const [topics, setTopicsValue] = useState([""]);
   const [isGameStarted, setGameStarted] = useState(false);
 
@@ -125,7 +125,7 @@ function Home() {
       <h2 className='titleText'>Word Assembly</h2>
       <div className="left">
         <Quantity inputName="letters" callback={onQuantLetterChanged} referName="letters" quantName="# of Letters" quantValue={3}></Quantity>
-        <Quantity inputName="topics" callback={onQuantTopicsChanged} referName="topics" quantName="# of Topics" quantValue={5}></Quantity>
+        <Quantity inputName="topics" callback={onQuantTopicsChanged} referName="topics" quantName="# of Topics" quantValue={3}></Quantity>
         <Lang inputName="lang" callback={onLangChanged} referName="lang" langValue={lang}></Lang>  
       </div>
 
