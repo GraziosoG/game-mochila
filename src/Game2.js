@@ -67,7 +67,7 @@ export default function Game2(){
         var player3Marker = new mapboxgl.Marker({draggable: true, color: "#469fe3"})
         .setLngLat([10, 0])
         .addTo(map.current);
-        var player4Marker = new mapboxgl.Marker({draggable: true, color: "#4e307a"})
+        var player4Marker = new mapboxgl.Marker({draggable: true, color: "#a881f7"})
         .setLngLat([10, 10])
         .addTo(map.current);
         var player5Marker = new mapboxgl.Marker({draggable: true, color: "#ED6F26"})
@@ -126,7 +126,7 @@ export default function Game2(){
             <p style={{color: "#ed211a"}}>Player 1</p>
             <p style={{color: "#24ed45"}}>Player 2</p>
             <p style={{color: "#469fe3"}}>Player 3</p>
-            <p style={{color: "#4e307a"}}>Player 4</p>
+            <p style={{color: "#a881f7"}}>Player 4</p>
             <p style={{color: "#ED6F26"}}>Player 5</p>
           </div>
 
