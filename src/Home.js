@@ -4,6 +4,8 @@ import Quantity from './Quantity';
 import Lang from './Lang';
 import Topics from './Topics';
 
+// timer toggle switch, random seed 
+
 function Home() {
   const [letters, setLettersValue] = useState("");
   const [quantLetters, setQuantLettersValue] = useState(3);

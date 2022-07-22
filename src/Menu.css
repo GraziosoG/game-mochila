@@ -1,10 +1,10 @@
 /*menu top bar*/
 .menu {
-    /*background-color: white;*/
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  /*background-color: white;*/
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*hamburger menu object*/
@@ -38,7 +38,7 @@
 
 /* close icon in opened menu*/
 .navbar-toggle {
-  background-color: #718ebd;
+  /*background-color: #718ebd;*/
   width: 100%;
   height: 80px;
   display: flex;
