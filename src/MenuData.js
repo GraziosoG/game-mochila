@@ -1,31 +1,42 @@
 import React from 'react';
-import { FaPencilAlt, FaSeedling } from 'react-icons/fa';
+import { FaHome, FaPencilAlt, FaSeedling } from 'react-icons/fa';
 import { TbApi } from 'react-icons/tb';
 import { BsPinMapFill } from 'react-icons/bs';
 
 export const MenuData = [
   {
-    title: 'Word Assembly',
+    title: 'Home',
     path: '/',
+    icon: <FaHome />,
+    color: '#878482',
+    colorSelect: '#826658',
+  },
+  {
+    title: 'Word Assembly',
+    path: '/wordAssembly',
     icon: <FaPencilAlt />,
-    cName: 'nav-text'
+    color: '#de8d5f', 
+    colorSelect: '#fc7021',
   },
   {
     title: 'Word Assembly (Seed) Coming Soon',
-    path: '/word-assembly-seed',
+    path: '/wordAssemblySeed',
     icon: <FaSeedling />,
-    cName: 'nav-text'
+    color: '#69b56d',
+    colorSelect: '#3feb48',
   },
   {
     title: 'Word Assembly (API) Coming Soon',
-    path: '/word-assembly-api',
+    path: '/wordAssemblyAPI',
     icon: <TbApi />,
-    cName: 'nav-text'
+    color: '#8476b5',
+    colorSelect: '#6a55b5',
   },
   {
     title: 'LocateMe',
-    path: '/locateme',
+    path: '/locateMe',
     icon: <BsPinMapFill />,
-    cName: 'nav-text'
+    color: '#7ca6eb',
+    colorSelect: '#498efc',
   },
 ];

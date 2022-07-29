@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import './map.css';
+import './LocateMe.css';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 
@@ -10,17 +10,16 @@ export default function Game2(){
     const map = useRef(null);
     const [latLng, setLatLng] = useState({lat: 0, lng: 0, zoom: 0});
 
-    const [p1Loc, setP1Loc] = useState({lat: 0, lng: 0});
+    const [p1Loc, setP1Loc] = useState({lat: 0, lng: 0}); // red, green, blue, purple, orange
     const [p2Loc, setP2Loc] = useState({lat: 0, lng: 10});
     const [p3Loc, setP3Loc] = useState({lat: 10, lng: 0});
     const [p4Loc, setP4Loc] = useState({lat: 10, lng: 10});
-    const [p5Loc, setP5Loc] = useState({lat: -10, lng: -10});
+    const [p5Loc, setP5Loc] = useState({lat: 5, lng: 5});
 
     const [ansLat, setAnsLat] = useState(0);
     const [ansLng, setAnsLng] = useState(0);
 
     const getClosest = () => {
-      console.log("hello");
       const locs = [p1Loc, p2Loc, p3Loc, p4Loc, p5Loc];
       const results = [0, 0, 0, 0, 0];
 
@@ -42,7 +41,6 @@ export default function Game2(){
           min2 = dist
         }
       }
-      console.log(results)
       const winner = results.indexOf(min) + 1;
       const secondPlace = results.indexOf(min2) + 1
 
@@ -71,7 +69,7 @@ export default function Game2(){
         .setLngLat([10, 10])
         .addTo(map.current);
         var player5Marker = new mapboxgl.Marker({draggable: true, color: "#ED6F26"})
-        .setLngLat([-10, -10])
+        .setLngLat([5, 5])
         .addTo(map.current);
 
         player1Marker.on('dragend', () => {setP1Loc({lat: player1Marker.getLngLat().lat, lng: player1Marker.getLngLat().lng})});

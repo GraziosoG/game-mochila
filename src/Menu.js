@@ -27,7 +27,7 @@ const Menu = () => {
                     </li>
                     {MenuData.map((item, index) => {
                         return (
-                            <li key={index} className={item.cName}>
+                            <li key={index} className="nav-text">
                                 <Link to={item.path}>
                                     {item.icon}
                                     <span className="nav-text-span">{item.title}</span>

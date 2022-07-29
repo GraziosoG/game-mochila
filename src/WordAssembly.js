@@ -1,4 +1,4 @@
-import './Home.css';
+import './WordAssembly.css';
 import React, { useState } from 'react';
 import Quantity from './Quantity';
 import Lang from './Lang';
@@ -11,7 +11,7 @@ function Home() {
   const [quantLetters, setQuantLettersValue] = useState(3);
   const [quantTopics, setQuantTopicsValue] = useState(3);
   const [lang, setLangValue] = useState("English");
-  const [allTopics, setAllTopicsValue] = useState(["Food", "Countries", "Cities", "Famous People", "Songs", "Movies and Shows", "Brands", "Companies", "Fruits/Veges", "Softwares and Apps", "First Names", "Last Names", "Historical Events",  "Periodic Elements", "Things Before 2000", "Things After 2000", "Words Ends with", "Color"]);
+  const [allTopics, setAllTopicsValue] = useState(["Food", "Countries", "Cities", "Famous Figures", "Songs", "Movies and Shows", "Brands", "Companies", "Fruits/Veges", "Softwares and Apps", "First Names", "Last Names", "Historical Events",  "Periodic Elements", "Things Before 2000", "Things After 2000", "Words Ends with", "Color"]);
   const [topics, setTopicsValue] = useState([""]);
   const [isGameStarted, setGameStarted] = useState(false);
 
