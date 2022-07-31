@@ -27,7 +27,7 @@
   position: absolute;
   top: 50px;
   left: 0;
-  margin: 10px;
+  margin: 12px;
   border-radius: 4px;
 }
 
@@ -58,11 +58,15 @@
 
 .distBtn {
   border-radius:10px;
-  margin: 3px;
+  margin: 10px;
   padding: 5px;
   font-size: 14px;
   border: none;
   background-color: #bababa;
+}
+
+.cordInstruct {
+  margin: 0px;
 }
 
 .playerColors {
@@ -73,9 +77,9 @@
   font-family: monospace;
   z-index: 1;
   position: absolute;
-  top: 180px;
+  top: 240px;
   left: 0;
-  margin: 10px;
+  margin-left: 12px;
   border-radius: 4px;
 }
 

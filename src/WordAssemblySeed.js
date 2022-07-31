@@ -85,7 +85,21 @@ function Home() {
     setAllTopicsValue(newTopics);
   }
 
+  const onGetNewGameClicked = () => {
+    if ((displaySeed === "") & (seedSubmitted === false)){
+      alert("Please first set a seed before starting a game")
+      return
+    } else {
+      onGetLettersClicked()
+      onGetTopicsClicked()
+    }
+  }
+
   const onGetLettersClicked = () => {
+    if ((displaySeed === "") & (seedSubmitted === false)){
+      alert("Please first set a seed before starting a game")
+      return
+    }
     setGameStarted(true)
     const lettersSet = new Set()
     if (lang === "English"){     
@@ -115,6 +129,10 @@ function Home() {
   }
 
   const onGetTopicsClicked = () => {
+    if ((displaySeed === "") & (seedSubmitted === false)){
+      alert("Please first set a seed before starting a game")
+      return
+    }
     setGameStarted(true)
     const wordsSet = new Set()
     if (allTopics.length < quantTopics){
@@ -174,7 +192,7 @@ function Home() {
         min="1"
         step="1"
         max="99999"
-        placeholder="Integers > 1 only"
+        placeholder="Integers >= 1 only"
         onChange={(e) => {setSeedValue(e.target.value);}}
         onKeyDown={(e) => {if(e.key === 'Enter') {onSubmitButtonClicked()}}}
         />
@@ -188,7 +206,7 @@ function Home() {
         <div className="displayTopics">{topics.map((item) =><p className="topicNames" key={item}>{item}</p>)}</div>
         {!isGameStarted ? <div><br/><br/><br/><br/><br/></div>: <div></div>}
         <button className="gameBtn getBtnOrg" onClick={onGetLettersClicked}>New <br /> Letters</button>
-        <button className="gameBtn getBtnBlu" onClick={() => {onGetLettersClicked(); onGetTopicsClicked();}}>New <br /> Game</button>
+        <button className="gameBtn getBtnBlu" onClick={onGetNewGameClicked}>New <br /> Game</button>
         <button className="gameBtn getBtnGrn" onClick={onGetTopicsClicked}>New <br /> Topics</button>
       </div>
       

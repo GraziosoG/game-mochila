@@ -118,6 +118,7 @@ export default function Game2(){
               />
             </div>
             <button onClick={() => {getClosest()}} className="distBtn">Get Winner</button>
+            <p className="cordInstruct">Add - for Southern <br/>and Western Hemisphere</p>
           </div>
 
           <div className="playerColors">
