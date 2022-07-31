@@ -21,3 +21,7 @@ body {
     float: inherit;
     width: 50%;
 }
+
+.buttons-welcome {
+    margin-top: 50px;
+}

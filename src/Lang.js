@@ -1,10 +1,10 @@
 import './Lang.css';
 import PropTypes from 'prop-types';
 
-const Lang = ({ inputName, referName, callback, langValue }) => {
+const Lang = ({ inputName, referName, callback, langValue, marginBottom }) => {
   
     return (
-    <div className="language-div">
+    <div className="language-div" style={{marginBottom: marginBottom}}>
         <label htmlFor={referName}>Choose Language</label>
 
         <br></br>

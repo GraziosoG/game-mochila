@@ -17,17 +17,21 @@ function Welcome() {
 
   return (
    <div className="container-welcome">
-      {MenuData.map((item, index) => {
-        return (
-            <button key={index} onClick={() => {onNavigateClicked(item.path)}}
-              onMouseEnter={event => onMouseOver(event, item.colorSelect)}
-              onMouseOut={event => onMouseOut(event, item.color)} 
-              className="home-buttons" type="button" style={{backgroundColor:item.color}}>
-                {item.icon} <br></br>
-                {item.title}
-            </button>
-        )
-      })}
+      <h2 className='titleText'>Home</h2>
+      <div className='buttons-welcome'>
+        {MenuData.map((item, index) => {
+          return (index > 0 ? // skip home element on welcome page
+          (
+              <button key={index} onClick={() => {onNavigateClicked(item.path)}}
+                onMouseEnter={event => onMouseOver(event, item.colorSelect)}
+                onMouseOut={event => onMouseOut(event, item.color)} 
+                className="home-buttons" type="button" style={{backgroundColor:item.color}}>
+                  {item.icon} <br></br>
+                  {item.title}
+              </button>
+          ) : null
+        )})}
+      </div>
    </div>
   );
 }

@@ -2,11 +2,11 @@ import './Quantity.css';
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
-const Quantity = ({ inputName, referName, quantName, quantValue, callback }) => {
+const Quantity = ({ inputName, referName, quantName, quantValue, callback, marginBottom }) => {
     const [quant, setQuantValue] = useState(quantValue);
   
     return (
-    <div className="quantity">
+    <div className="quantity" style={{marginBottom: marginBottom}}>
         <label htmlFor={referName}>{quantName}</label>
 
         <br></br>
