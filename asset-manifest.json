@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/word-assembly/static/css/main.9b4ca586.css",
+    "main.js": "/word-assembly/static/js/main.a748d066.js",
+    "static/js/787.956504a9.chunk.js": "/word-assembly/static/js/787.956504a9.chunk.js",
+    "index.html": "/word-assembly/index.html",
+    "main.9b4ca586.css.map": "/word-assembly/static/css/main.9b4ca586.css.map",
+    "main.a748d066.js.map": "/word-assembly/static/js/main.a748d066.js.map",
+    "787.956504a9.chunk.js.map": "/word-assembly/static/js/787.956504a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b4ca586.css",
+    "static/js/main.a748d066.js"
+  ]
+}
