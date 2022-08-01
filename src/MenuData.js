@@ -6,7 +6,7 @@ import { BsPinMapFill } from 'react-icons/bs';
 export const MenuData = [
   {
     title: 'Home',
-    path: '/welcome',
+    path: '/game-mochila',
     icon: <FaHome />,
     color: '#878482',
     colorSelect: '#826658',
