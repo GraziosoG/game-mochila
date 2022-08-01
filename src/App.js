@@ -15,10 +15,10 @@ const App = () => {
 
   return (
     <UserContext.Provider value={{username: username, updateUserContext: updateUserContext}}>  
-      <BrowserRouter>
+      <BrowserRouter basename="/game-mochila">
       <Menu />
         <Routes>
-            <Route path="/game-mochila" element={<Welcome/>}/>
+            <Route path="/" element={<Welcome/>}/>
             <Route path="/wordAssembly" element={<WordAssembly/>}/>
             <Route path="/wordAssemblySeed" element={<WordAssemblySeed/>}/>
             <Route path="/locateMe" element={<LocateMe/>}/>

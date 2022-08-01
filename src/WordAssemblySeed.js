@@ -4,8 +4,6 @@ import Quantity from './Quantity';
 import Lang from './Lang';
 import Topics from './Topics';
 
-// timer toggle switch, random seed 
-
 function Home() {
   const [letters, setLettersValue] = useState("");
   const [quantLetters, setQuantLettersValue] = useState(1);
@@ -51,6 +49,7 @@ function Home() {
     console.log(useSeed)
     let x = Math.sin(parseInt(useSeed)+3) * 10000;
     console.log("x")
+    console.log(useSeed)
     console.log(x)
     let nrandom = x - Math.floor(x)
     console.log("nrandom")
@@ -183,11 +182,11 @@ function Home() {
     <div className='container'>
       <h2 className='titleText'>Word Assembly Seed</h2>
       <div className="left">
-        <Quantity inputName="letters" callback={onQuantLetterChanged} referName="letters" quantName="# of Letters" quantValue={1} marginBottom="15px"></Quantity>
-        <Quantity inputName="topics" callback={onQuantTopicsChanged} referName="topics" quantName="# of Topics" quantValue={1} marginBottom="15px"></Quantity>
-        <Lang inputName="lang" callback={onLangChanged} referName="lang" langValue={lang} marginBottom="15px"></Lang>
+        <Quantity inputName="letters" callback={onQuantLetterChanged} referName="letters" quantName="# of Letters" quantValue={1} marginBottom="12px"></Quantity>
+        <Quantity inputName="topics" callback={onQuantTopicsChanged} referName="topics" quantName="# of Topics" quantValue={1} marginBottom="12px"></Quantity>
+        <Lang inputName="lang" callback={onLangChanged} referName="lang" langValue={lang} marginBottom="12px"></Lang>
         <p style={{fontSize: "18px"}}>Set Seed</p>
-        <div>{seedSubmitted ? displaySeed : ""}</div>
+        <div className="seedDisplay">{seedSubmitted ? displaySeed : ""}</div>
         <input
         className="seedInput"
         value={seed}

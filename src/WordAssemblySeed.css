@@ -91,6 +91,11 @@
     background-color: #abb5aa;
 }
 
+.seedDisplay {
+    margin: 2px;
+    font-size: 20px;
+}
+
 .seedInput {
     border: 2px solid #919191;
     border-radius: 4px;
