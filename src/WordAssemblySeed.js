@@ -16,8 +16,10 @@ function Home() {
   const [isGameStarted, setGameStarted] = useState(false);
   const [seed, setSeedValue] = useState("");
   const [displaySeed, setDisplaySeedValue] = useState("");
-  const [useSeed, setUseSeedValue] = useState("");
+  //const [useSeed, setUseSeedValue] = useState("");
   const [seedSubmitted, setSeedSubmitted] = useState(false);
+
+  let useSeed = 0
 
   const onQuantLetterChanged = (e) => {
     setQuantLettersValue(e);
@@ -33,11 +35,11 @@ function Home() {
     setSeedSubmitted(true)
     if (parseInt(seed) > 0) {
       setDisplaySeedValue(parseInt(seed))
-      setUseSeedValue(parseInt(seed))
+      useSeed = parseInt(seed) //setUseSeedValue(parseInt(seed))
     } else {
       alert("Seed must be an integer greater than or equal to 1. Seed is set to 1 for you, or you can change to another valid seed number. ")
       setDisplaySeedValue(1)
-      setUseSeedValue(1)
+      useSeed = 1 //setUseSeedValue(1)
     }
     setSeedValue("")
     /*let ranint = getRandomInt(5)
@@ -53,7 +55,8 @@ function Home() {
     let nrandom = x - Math.floor(x)
     console.log("nrandom")
     console.log(nrandom)
-    setUseSeedValue(parseInt(useSeed)+3)
+    useSeed += 3 //setUseSeedValue(parseInt(useSeed)+3)
+    console.log(useSeed)
     return nrandom;
 }
 
