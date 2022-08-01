@@ -18,7 +18,7 @@ const App = () => {
       <BrowserRouter>
       <Menu />
         <Routes>
-            <Route exact path="/welcome" element={<Welcome/>}/>
+            <Route path="/welcome" element={<Welcome/>}/>
             <Route path="/wordAssembly" element={<WordAssembly/>}/>
             <Route path="/wordAssemblySeed" element={<WordAssemblySeed/>}/>
             <Route path="/locateMe" element={<LocateMe/>}/>
