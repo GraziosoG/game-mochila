@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/game-mochila/static/css/main.5b932f19.css",
-    "main.js": "/game-mochila/static/js/main.06b1bc60.js",
+    "main.css": "/game-mochila/static/css/main.9c546b27.css",
+    "main.js": "/game-mochila/static/js/main.b68b6284.js",
     "static/js/787.956504a9.chunk.js": "/game-mochila/static/js/787.956504a9.chunk.js",
     "index.html": "/game-mochila/index.html",
-    "main.5b932f19.css.map": "/game-mochila/static/css/main.5b932f19.css.map",
-    "main.06b1bc60.js.map": "/game-mochila/static/js/main.06b1bc60.js.map",
+    "main.9c546b27.css.map": "/game-mochila/static/css/main.9c546b27.css.map",
+    "main.b68b6284.js.map": "/game-mochila/static/js/main.b68b6284.js.map",
     "787.956504a9.chunk.js.map": "/game-mochila/static/js/787.956504a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b932f19.css",
-    "static/js/main.06b1bc60.js"
+    "static/css/main.9c546b27.css",
+    "static/js/main.b68b6284.js"
   ]
 }
