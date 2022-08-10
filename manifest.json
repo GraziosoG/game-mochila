@@ -3,17 +3,17 @@
   "name": "A Collection of Games to Kill Time",
   "icons": [
     {
-      "src": "flor256.ico",
+      "src": "flor256_256.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "flor192.png",
+      "src": "flor192_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "flor512.png",
+      "src": "flor512_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
