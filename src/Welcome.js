@@ -2,6 +2,7 @@ import './Welcome.css';
 import React from 'react';
 import { MenuData} from './MenuData';
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Welcome() {
   const navigate = useNavigate();
@@ -17,6 +18,11 @@ function Welcome() {
 
   return (
    <div className="container-welcome">
+      <Helmet>
+        <title>Game Mochila</title>
+        <meta name="description" content="Game Mochila offers family games, Word Assbmbly and LocateMe."></meta>
+        <meta name="keywords" content="Family Game"></meta>
+      </Helmet>     
       <h2 className='titleText'>Home</h2>
       <div className='buttons-welcome'>
         {MenuData.map((item, index) => {

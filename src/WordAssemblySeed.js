@@ -1,5 +1,6 @@
 import './WordAssemblySeed.css';
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet";
 import Quantity from './Quantity';
 import Lang from './Lang';
 import Topics from './Topics';
@@ -180,6 +181,11 @@ function Home() {
 
   return (
     <div className='container'>
+      <Helmet>
+        <title>Word Assembly Seed</title>
+        <meta name="description" content="Word Assembly Seed is a modified version of its original, Word Assembly, where categories and letters can be regenerated using the same seed, i.e. a given number, and players have to come up with words for each letter and category."></meta>
+        <meta name="keywords" content="Word Assembly Seed Family Game"></meta>
+      </Helmet>
       <h2 className='titleText'>Word Assembly Seed</h2>
       <div className="left">
         <Quantity inputName="letters" callback={onQuantLetterChanged} referName="letters" quantName="# of Letters" quantValue={1} marginBottom="12px"></Quantity>

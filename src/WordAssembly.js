@@ -1,5 +1,6 @@
 import './WordAssembly.css';
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet";
 import Quantity from './Quantity';
 import Lang from './Lang';
 import Topics from './Topics';
@@ -124,6 +125,11 @@ function Home() {
 
   return (
     <div className='container'>
+      <Helmet>
+        <title>Word Assembly</title>
+        <meta name="description" content="Word Assembly is a game where the app generates categories and letters, and players have to come up with words for each letter and category."></meta>
+        <meta name="keywords" content="Word Assembly Family Game"></meta>
+      </Helmet>
       <h2 className='titleText'>Word Assembly</h2>
       <div className="left">
         <Quantity inputName="letters" callback={onQuantLetterChanged} referName="letters" quantName="# of Letters" quantValue={3} marginBottom="40px"></Quantity>

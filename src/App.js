@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Menu from './Menu';
 import Welcome from './Welcome';
 import WordAssembly from './WordAssembly';
@@ -17,6 +18,7 @@ const App = () => {
     <UserContext.Provider value={{username: username, updateUserContext: updateUserContext}}>  
       <BrowserRouter basename="/game-mochila">
       <Menu />
+        
         <Routes>
             <Route path="/" element={<Welcome/>}/>
             <Route path="/wordAssembly" element={<WordAssembly/>}/>

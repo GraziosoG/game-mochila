@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { Helmet } from "react-helmet";
 import './LocateMe.css';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
@@ -90,6 +91,14 @@ export default function Game2(){
 
       return (
         <div className="map-wrap">
+          <Helmet>
+            <title>LocateMe</title>
+            <meta name="description" content="LocateMe is where users guess and denote on the map where they think a random point on streetview is, and the closest person wins."></meta>
+            <meta name="keywords" content="LocateMe Family Game"></meta>
+          </Helmet>
+
+          <h2 className='titleText'>LocateMe</h2>
+
           <div className="sidebar">
           Latitude: {latLng.lat} | Longitude: {latLng.lng} | Zoom: {latLng.zoom}
           </div>

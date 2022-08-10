@@ -11,6 +11,7 @@
   margin-left: 20px;
   font-size: 2rem;
   background: none;
+  z-index: 2;
 }
 
 /* opened up menu*/
@@ -24,12 +25,13 @@
   top: 0;
   left: -100%;
   transition: 850ms;
+  z-index: 3;
 }
 
 .nav-menu.active {
   left: -3%;
   transition: 350ms;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-menu-items {
